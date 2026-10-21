@@ -18,6 +18,13 @@ namespace postalservice.Models
 
         //Dictionary som hanterar paketet. Key = försändelseId och Value = paketet 
         private readonly Dictionary<int, Parcel> parcelsInSystem = new Dictionary<int, Parcel>();
+
+
+        public void AddParcel(int id, Parcel parcel)
+        {
+
+            parcelsInSystem.Add(id,parcel);
+        }
         
     }
 }
