@@ -15,6 +15,10 @@ namespace postalservice.Models
         public Customer Sender { get; set; }
         public Customer Receiver { get; set; }
 
+        //Har ska vi ha STATE get set osv 
+        //ShippingStrategy 
+        //WeightStrategy 
+
 
         public Parcel(int id, decimal weight, Address addressSender, Address addressReceiver, Customer sender, Customer receiver)
         {

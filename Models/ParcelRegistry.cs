@@ -6,23 +6,24 @@ namespace postalservice.Models
 {
     public class ParcelRegistry
     {
-        private int Id { get; set; }
+
         private Parcel Parcel { get; set; }
 
-        public ParcelRegistry( int id, Parcel parcel) 
-        { 
-            Id = id;
-            Parcel=parcel;
-           
-        }
-
-
-        public int GenerateParcelId()
+        public ParcelRegistry(int id, Parcel parcel)
         {
-            Id = RandomNumberGenerater.Create();
 
-            
-          
+            Parcel = parcel;
+
         }
+
+        //Dictionary som hanterar paketet. Key = försändelseId och Value = paketet 
+        private readonly Dictionary<int, Parcel> parcelsInSystem = new Dictionary<int, Parcel>();
+        {
+        }
+
+        //metod för att lägga till paket
+       //Metod för att ta bort paket 
+      //Metod för att hitta paket i dictinary 
+
     }
 }
