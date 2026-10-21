@@ -10,14 +10,17 @@ namespace postalservice.Models
         private decimal Weight { get; set; }
 
         private Address Address { get; set; }
-        private Customer Customer { get; set; }
+        private Customer Sender { get; set; }
+        private Customer Reciver { get; set; }
 
-        public Parcel(ParcelRegistry id, decimal weight, Address address, Customer customer)
+
+        public Parcel(ParcelRegistry id, decimal weight, Address address, Customer sender, Customer reciver)
         {
             Id = id;
             Weight = weight;
             Address = address;
-            Customer = customer;
+            Sender = sender;
+            Reciver = reciver;
                      
         }
 
