@@ -1,4 +1,4 @@
-﻿namespace postalservice.Models
+﻿namespace postalservice.Models.Observer
 {
     public interface IObserver
     {

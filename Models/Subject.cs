@@ -1,4 +1,6 @@
-﻿namespace postalservice.Models
+﻿using postalservice.Models.Observer;
+
+namespace postalservice.Models
 {
     public class Subject
     {
