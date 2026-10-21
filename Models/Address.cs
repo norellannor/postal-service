@@ -6,9 +6,9 @@ namespace postalservice.Models
 {
     public class Address
     {
-        private string StreetAddress { get; set; }
-        private string PostalCode { get; set; }
-        private string City { get; set; }
+        public string StreetAddress { get; set; }
+        public string PostalCode { get; set; }
+        public string City { get; set; }
 
         public Address(string streetAddress, string postalCode, string city)
         {

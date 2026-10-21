@@ -9,9 +9,11 @@ namespace postalservice.Models
         private int Id { get; set; }
         private Parcel Parcel { get; set; }
 
-        public ParcelRegistry( int id, Parcel Parcel) 
+        public ParcelRegistry( int id, Parcel parcel) 
         { 
-            
+            Id = id;
+            Parcel=parcel;
+           
         }
 
 

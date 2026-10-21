@@ -6,21 +6,24 @@ namespace postalservice.Models
 {
     public class Parcel
     {
-        private ParcelRegistry Id { get; set; }
-        private decimal Weight { get; set; }
+        public int Id { get; set; }
+        public decimal Weight { get; set; }
 
-        private Address Address { get; set; }
-        private Customer Sender { get; set; }
-        private Customer Reciver { get; set; }
+        public Address AddressSender { get; set; }
+
+        public Address AddressReceiver { get; set; }
+        public Customer Sender { get; set; }
+        public Customer Receiver { get; set; }
 
 
-        public Parcel(ParcelRegistry id, decimal weight, Address address, Customer sender, Customer reciver)
+        public Parcel(int id, decimal weight, Address addressSender, Address addressReceiver, Customer sender, Customer receiver)
         {
             Id = id;
             Weight = weight;
-            Address = address;
+            AddressSender = addressSender;
+            AddressReciver = addressReceiver;
             Sender = sender;
-            Reciver = reciver;
+            Reciver = receiver;
                      
         }
 
