@@ -19,6 +19,8 @@ namespace postalservice.Models
         //ShippingStrategy 
         //WeightStrategy 
 
+        //
+
 
         public Parcel(int id, decimal weight, Address addressSender, Address addressReceiver, Customer sender, Customer receiver)
         {
